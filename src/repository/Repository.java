@@ -8,7 +8,7 @@ import java.util.Optional;
 import java.util.function.Predicate;
 
 public class Repository<T extends Product> {
-    private HashMap<String, T> products;
+    private final HashMap<String, T> products;
 
     public Repository() {
         this.products = new HashMap<>();
